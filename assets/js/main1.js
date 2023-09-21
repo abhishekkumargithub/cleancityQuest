@@ -1,0 +1,50 @@
+// setting up firebase with our website
+const firebaseApp = firebase.initializeApp({
+    apiKey: "AIzaSyCuBKCvDcR46rwFbjJKHnEpSv4aW3pa35Y",
+    authDomain: "gfghackthon-89c75.firebaseapp.com",
+    databaseURL: "https://gfghackthon-89c75-default-rtdb.firebaseio.com",
+    projectId: "gfghackthon-89c75",
+    storageBucket: "gfghackthon-89c75.appspot.com",
+    messagingSenderId: "541382055062",
+    appId: "1:541382055062:web:3ce858f246c68441dedeb7",
+    measurementId: "G-189Y397X92"
+  });
+  const db = firebaseApp.firestore();
+  const auth = firebaseApp.auth();
+  
+  // Sign up function
+  const signUp = () => {
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+    console.log(email, password)
+    // firebase code
+    firebase.auth().createUserWithEmailAndPassword(email, password)
+        .then((result) => {
+            // Signed in 
+            document.write("You are Signed Up")
+            console.log(result)
+            // ...
+        })
+        .catch((error) => {
+            console.log(error.code);
+            console.log(error.message)
+            // ..
+        });
+  }
+  
+  // Sign In function
+  const signIn = () => {
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+    // firebase code
+    firebase.auth().signInWithEmailAndPassword(email, password)
+        .then((result) => {
+            // Signed in 
+            document.write("You are Signed In")
+            console.log(result)
+        })
+        .catch((error) => {
+            console.log(error.code);
+            console.log(error.message)
+        });
+  }

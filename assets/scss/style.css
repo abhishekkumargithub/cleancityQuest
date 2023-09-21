@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka One', cursive; /* Apply the chosen handwriting font */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Fredoka One', cursive; /* Apply the chosen handwriting font */
+    background-color: #0a852fae; /* Change the background color to a classy shade */
+}
+
+.login-container {
+    background-color: #ffffff;
+    padding: 4%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    /* horizontal align */
+    width: 30vw;
+    margin-left: 7vw;
+    /* vertical align */
+    height: 50vh;
+    margin-top: 10vh; 
+    margin-bottom: 10vh;
+    border-radius: 10px; /* Round the corners of the login container */
+}
+
+.login-container1 {
+    background-color: #ffffff;
+    padding: 4%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    /* horizontal align */
+    width: 30vw;
+    margin-left: 7vw;
+    /* vertical align */
+    height: 80vh;
+    margin-top: 10vh; 
+    margin-bottom: 10vh;
+    border-radius: 10px; /* Round the corners of the login container */
+}
+
+label {
+    display: block;
+    font-weight: bold; /* Use a bold font for labels */
+    margin: 5px 0px;
+}
+
+input {
+    width: 100%;
+    padding: 8px 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#submit-btn {
+    border: none;
+    background-color: #0a852fae; /* Change the button background color to a classy shade */
+    width: 100%;
+    padding: 10px 8px;
+    color: black;
+    font-weight: bold; /* Use a bold font for the button */
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 9px 0px;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+p {
+    font-size: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold; /* Use a bold font for links */
+}
+

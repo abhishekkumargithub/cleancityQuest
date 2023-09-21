@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <link rel="stylesheet" href="assets/scss/style.css" />
+    <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-auth-compat.js"></script>
+  </head>
+  <body>
+    <div class="login-container1">
+      <!-- Firstname -->
+      <div class="firstname">
+        <label for="firstname">First Name</label>
+        <input
+          type="text"
+          name="firstname"
+          id="firstname"
+          placeholder="Enter your first name"
+        />
+      </div>
+
+      <!-- Lastname -->
+      <div class="lastname">
+        <label for="lastname">Last Name</label>
+        <input
+          type="text"
+          name="lastname"
+          id="lastname"
+          placeholder="Enter your last name"
+        />
+      </div>
+
+      <!-- Phone number -->
+      <div class="phoneno">
+        <label for="phoneno">Phone Number</label>
+        <input
+          type="tel"
+          name="phoneno"
+          id="phoneno"
+          placeholder="Enter your phone number"
+        />
+      </div>
+
+      <!-- Email  -->
+      <div class="email">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email address"
+        />
+      </div>
+
+      <!-- Password -->
+      <div class="password">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Enter your password"
+        />
+      </div>
+
+      <!-- Sign In button -->
+      <button id="submit-btn" onclick="signIn()">Sign In</button>
+    </div>
+
+    <script src="assets/js/main1.js"></script>
+  </body>
+</html>
