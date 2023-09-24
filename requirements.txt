@@ -1,6 +1,9 @@
 cv2
-numpy as np
-opencv-python
+pip install numpy
+pip install opencv-python
+pip install flask
+pip install os
+pip install json
 
 HOW To Run
 python -m venv myenv
