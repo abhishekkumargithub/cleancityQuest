@@ -3,24 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Object Detection</title>
+    <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-auth-compat.js"></script>
 </head>
 <body>
+    {% if user_email %}
+    <p>Are,You Ready {{ user_email }}!</p>
+    {% endif %}
+    
+
     <h1>Object Detection Live Feed</h1>
     <img src="{{ url_for('video_feed') }}" width="640" height="480">
+    <div id="buttons"></div>
+    <script>
+        var user_email = "{{ user_email }}";
+    </script>
+    <script type="module" src="../assets/js/results.js"></script>
 </body>
-<script>
-    async function fetchDetectedObjects() {
-        const response = await fetch('/get_detected_objects');
-        const data = await response.json();
-        const detectedObjects = data.detected_objects;
-        console.log('Detected Objects:', detectedObjects);
-
-        // You can now use the detectedObjects array in your JavaScript code.
-        // For example, update the DOM to display the detected objects.
-        // Example: document.getElementById('detected-objects').innerText = detectedObjects.join(', ');
-    }
-
-    // Call the function to fetch detected objects when the page loads.
-    window.addEventListener('load', fetchDetectedObjects);
-</script>
 </html>

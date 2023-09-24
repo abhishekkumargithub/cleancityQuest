@@ -2,9 +2,6 @@ cv2
 numpy as np
 opencv-python
 
-HOW TO run
+HOW To Run
 python -m venv myenv
 flask run
-
-pip install redis 
-pip install flask-socketio

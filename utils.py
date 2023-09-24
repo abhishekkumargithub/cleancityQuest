@@ -1,4 +1,5 @@
 import cv2
+import json
 
 
 cap = cv2.VideoCapture(0)
@@ -11,6 +12,8 @@ font_thickness = 2
 detected_objects = []  # To store detected objects
 
 def detect_object(frame):
+    detected_objects.clear()  # Clear the list at the beginning of each frame
+
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     faces = face_cascade.detectMultiScale(gray, 1.3, 5)
     for (x, y, w, h) in faces:
@@ -25,6 +28,9 @@ def detect_object(frame):
             detected_objects.append('Eye')
 
     return frame
+
+
+
 
 def genz():
 

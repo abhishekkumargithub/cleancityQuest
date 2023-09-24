@@ -37,16 +37,32 @@ const firebaseApp = firebase.initializeApp({
   const signIn = () => {
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
-    // firebase code
+
     firebase.auth().signInWithEmailAndPassword(email, password)
         .then((result) => {
-            // Signed in 
-            alert("You are Signed In")
+            // Signed in
+            alert("You are Signed In");
+
+            // Send the user's email to the server
+            fetch('/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ email: email }),
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data); // You can handle the response data here
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+
             window.location.href = '/';
-       
         })
         .catch((error) => {
             console.log(error.code);
             console.log(error.message)
         });
-  }
+}
