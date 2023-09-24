@@ -1,0 +1,10 @@
+cv2
+numpy as np
+opencv-python
+
+HOW TO run
+python -m venv myenv
+flask run
+
+pip install redis 
+pip install flask-socketio
