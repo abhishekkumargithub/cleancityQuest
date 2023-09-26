@@ -39,7 +39,7 @@ async function fetchDetectedObjects() {
         // Check if the "PointSystem" collection exists
         const pointSystemRef = db.collection('PointSystem');
         const doc = await pointSystemRef.doc(user_email).get();
-
+        console.log("test")
         if (!doc.exists) {
           // If the document does not exist, create it with initial points
           await pointSystemRef.doc(user_email).set({
