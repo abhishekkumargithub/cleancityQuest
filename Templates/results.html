@@ -3,19 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <title>Object Detection</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Include your CSS file here -->
+    <style>
+        body {
+            background-color: rgb(216, 236, 242);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family:  cursive; 
+        }
+        
+        .container {
+            background-color: rgb(12, 186, 108);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 15px;
+            margin-top: 10px;
+            margin-left: 20px;
+            margin-right: 5px;
+        }
+        
+        h1 {
+            color: rgb(254, 237, 237);
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+        
+        img {
+            border-radius: 20px;
+        }
+        
+        p {
+            color: rgb(199, 39, 39);
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+            text-align: left;
+        }
+    </style>
     <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-auth-compat.js"></script>
 </head>
 <body>
-    {% if user_email %}
-    <p style="color: var(--title-color); font-size: var(--normal-font-size);">Are, You Ready {{ user_email }}!</p>
-    {% endif %}
+    <div class="top-container">
+        {% if user_email %}
+        <p><b>Are you ready,{{ user_email }}!!!<b></p>
+        {% endif %}
+    </div>
     
-    <h1 style="color: var(--title-color); font-size: var(--biggest-font-size);">Object Detection Live Feed</h1>
-    <img src="{{ url_for('video_feed') }}" width="640" height="480">
-    <div id="buttons"></div>
+    <div class="container">
+        <h1>Object Detection Live Feed</h1>
+        <img src="{{ url_for('video_feed') }}" width="900" height="480">
+        <div id="buttons"></div>
+    </div>
+    
     <script>
         var user_email = "{{ user_email }}";
     </script>
