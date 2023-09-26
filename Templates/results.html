@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Object Detection</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Include your CSS file here -->
+    <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-auth-compat.js"></script>
+</head>
+<body>
+    {% if user_email %}
+    <p style="color: var(--title-color); font-size: var(--normal-font-size);">Are, You Ready {{ user_email }}!</p>
+    {% endif %}
+    
+    <h1 style="color: var(--title-color); font-size: var(--biggest-font-size);">Object Detection Live Feed</h1>
+    <img src="{{ url_for('video_feed') }}" width="640" height="480">
+    <div id="buttons"></div>
+    <script>
+        var user_email = "{{ user_email }}";
+    </script>
+    <script type="module" src="../assets/js/results.js"></script>
+</body>
+</html>
