@@ -69,10 +69,24 @@ def video_feed():
                     mimetype='multipart/x-mixed-replace; boundary=frame')
    
     
+@app.route("/profile")
+def profile():
+    user_email = session.get('user_email', None)
+    if user_email:
+        return render_template("profile.html", user_email=user_email)  # Pass user_email to the template
+    else:
+        return render_template("index.html")
 
 @app.route('/get_detected_objects')
 def get_detected_objects():
     return {'detected_objects': detected_objects}
+
+@app.route('/logout')
+def logout():
+
+    session.pop('user_email', None)
+    return redirect('/')
+
 
 if __name__ == '__main__':
     app.run(debug=True)

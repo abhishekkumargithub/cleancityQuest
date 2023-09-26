@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Include your CSS file here -->
+    <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-auth-compat.js"></script>
+</head>
+<body>
+    {% if user_email %}
+    <script>
+        const user_email = "{{ user_email }}";
+    </script>
+    <p style="color: var(--title-color); font-size: var(--normal-font-size);">{{ user_email }}</p>
+    <div>
+        <p>User Email: <span id="userEmail"></span></p>
+        <p>Points: <span id="points"></span></p>
+        <p>Rank: <span id="rank"></span></p>
+    </div>
+    {% endif %}
+    <script type="module" src="../assets/js/profile.js"></script>
+</body>
+</html>

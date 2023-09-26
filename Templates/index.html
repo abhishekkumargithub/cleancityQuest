@@ -26,7 +26,7 @@
       <nav class="nav bd-container">
         <a href="#" class="nav__logo">GoblinCleaner</a>
         {% if user_email %}
-        <p>Welcome, {{ user_email }}!</p>
+        <p>Welcome, <a href="/profile">{{ user_email }}</a> !</p>
         {% endif %}
 
         <div class="nav__menu" id="nav-menu">
@@ -49,6 +49,13 @@
             <li class="nav__item">
               <a href="/results" class="button">Detect Objects</a>
             </li>
+            {% if user_email %}
+            <li class="nav__item">
+              <a href="/logout" class="button">Logout</a>
+            </li>
+            {% endif %}
+
+            
 
             <li><i class="bx bx-moon change-theme" id="theme-button"></i></li>
           </ul>
