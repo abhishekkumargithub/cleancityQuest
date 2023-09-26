@@ -16,7 +16,9 @@ const auth = firebaseApp.auth();
 const signUp = async() => {
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
-
+  const FirstName = document.getElementById("firstname").value;
+  const LastName = document.getElementById("lastname").value;
+  const phoneNumber = document.getElementById("phoneno").value;
   // firebase code
   await firebase
     .auth()
@@ -35,6 +37,23 @@ const signUp = async() => {
         .catch((error) => {
           console.error("Error adding document: ", error);
         });
+
+        const data2 = {
+          FirstName : FirstName, 
+          LastName : LastName, 
+          PhoneNumber : phoneNumber,
+          user_email: email,
+        }
+
+        db.collection("UserDetails")
+        .add(data2)
+        .then((docRef) => {
+          console.log("Document written with ID: ", docRef.id);
+        })
+        .catch((error) => {
+          console.error("Error adding document: ", error);
+        });
+
       alert("You are Signed Up");
     })
     .catch((error) => {
@@ -42,6 +61,8 @@ const signUp = async() => {
       console.log(error.message);
       // ..
     });
+
+
     window.location.href = "/login";
 };
 
@@ -67,7 +88,7 @@ const signIn = () => {
       })
         .then((response) => response.json())
         .then((data) => {
-          console.log(data); // You can handle the response data here
+          console.log(data);
         })
         .catch((error) => {
           console.error("Error:", error);

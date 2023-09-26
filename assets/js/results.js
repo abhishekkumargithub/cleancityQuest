@@ -29,43 +29,28 @@ async function fetchDetectedObjects() {
     const currentTime = Date.now();
 
     if (!lastDetectedObjects[object] || currentTime - lastDetectedObjects[object] >= cooldownTime) {
-      // Create a button if it's a new unique object or cooldown time has passed since the last detection
       const button = document.createElement('button');
       button.textContent = `Do Challenge ${object}`;
       button.addEventListener('click', async () => {
-        // Handle the button click event here, e.g., start a challenge related to the object
-        console.log(`Challenge started for ${object}`);
-
-        // Check if the "PointSystem" collection exists
-        const pointSystemRef = db.collection('PointSystem');
+        const pointSystemRef = db.collection('PointSystem');  
         const doc = await pointSystemRef.doc(user_email).get();
-        console.log("test")
-        if (!doc.exists) {
-          // If the document does not exist, create it with initial points
-          await pointSystemRef.doc(user_email).set({
-            useremail: user_email,
-            points: 50 // You can set the initial points as needed
-          });
-          console.log("done 1")
-        } else {
-          // If the document exists, update the user's points by +50
+        // if (!doc.exists) {
+        //   await pointSystemRef.doc(user_email).set({
+        //     useremail: user_email,
+        //     points: 50 
+        //   });
+        // } else {
+        //   // If the document exists, update the user's points by +50
           await pointSystemRef.doc(user_email).update({
             points: firebase.firestore.FieldValue.increment(50)
           });
-          console.log("done 2")
-        }
-      });
-
-      // Append the button to the buttonsDiv
+      })
       buttonsDiv.appendChild(button);
-
-      // Update the last detected time for this object
       lastDetectedObjects[object] = currentTime;
-
       // Set a timeout to remove the button after 5 seconds
       setTimeout(() => {
         buttonsDiv.removeChild(button);
-        delete lastDetectedObjects[object]; // Remove the object from the tracking after button removal
+        delete lastDetectedObjects[object];
       }, 5000);
     }
   });
