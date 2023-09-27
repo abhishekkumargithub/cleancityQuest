@@ -1,4 +1,4 @@
-####**Project Title: CleanCityQuest**
+<h1>**Project Title: CleanCityQuest**</h1>
 
 ##Description:
 Are you tired of boring cleanup tasks? Want to make a difference in your community while having fun? Look no further than "CleanCity Quest"! Our app gamifies cleaning tasks, detects waste items, and rewards you with points for cleaning them up. Join us in our mission to revolutionize the way we tackle litter and waste in our communities - let's make cleaning up a thrilling adventure!
