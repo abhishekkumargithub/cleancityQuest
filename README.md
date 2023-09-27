@@ -1,9 +1,9 @@
-<h1>**Project Title: CleanCityQuest**</h1>
+<h1>Project Title: CleanCityQuest </h1>
 
-##Description:
+<h4>Description:</h4>
 Are you tired of boring cleanup tasks? Want to make a difference in your community while having fun? Look no further than "CleanCity Quest"! Our app gamifies cleaning tasks, detects waste items, and rewards you with points for cleaning them up. Join us in our mission to revolutionize the way we tackle litter and waste in our communities - let's make cleaning up a thrilling adventure!
 
-##Project theme: EcoTech
+<h4>Project theme: EcoTech</h4>
 
 **
 🔥🧹 Unleash your inner goblin cleaner and dominate your city! 🌆🧼 Don't wait any longer, dive into the thrilling world of goblin cleaning and start playing now! 🎮💪 
