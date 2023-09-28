@@ -163,7 +163,7 @@ window.addEventListener("load", fetchUserData);
 
 const fetchTop3Users = async () => {
   const pointSystemRef = db.collection("PointSystem");
-  const userDetailsRef = db.collection("UserDetails"); // Corrected variable name
+  const userDetailsRef = db.collection("UserDetails"); 
 
   try {
     const querySnapshot = await pointSystemRef

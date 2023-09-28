@@ -55,6 +55,7 @@ const signUp = async() => {
         });
 
       alert("You are Signed Up");
+      
     })
     .catch((error) => {
       console.log(error.code);
@@ -62,8 +63,9 @@ const signUp = async() => {
       // ..
     });
 
+    window.location = "/login";
 
-    window.location.href = "/login";
+   
 };
 
 // Sign In function
@@ -94,7 +96,7 @@ const signIn = () => {
           console.error("Error:", error);
         });
 
-      window.location.href = "/";
+      window.location= "/";
     })
     .catch((error) => {
       console.log(error.code);

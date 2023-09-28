@@ -13,6 +13,27 @@ const firebaseApp = firebase.initializeApp({
   const db = firebaseApp.firestore();
   const auth = firebaseApp.auth();
   
+  const fetchUserData = async () => {
+    const profileRef = db.collection("UserDetails");
+    try {
+      const querySnapshot = await profileRef
+        .where("user_email", "==", user_email)
+        .get();
+      if (!querySnapshot.empty) {
+        querySnapshot.forEach((doc) => {
+          const documentData = doc.data();
+          const userName = document.getElementById("name");
+          userName.textContent =
+            documentData.FirstName + " " + documentData.LastName;
+        });
+      } else {
+        console.log("No matching documents.");
+      }
+    } catch (error) {
+      console.error("Error fetching profile data:", error);
+    }
+  };
+  window.addEventListener('load', fetchUserData);
   const fetchProfileData = async () => {
     const profileRef = db.collection("PointSystem");
     try {
