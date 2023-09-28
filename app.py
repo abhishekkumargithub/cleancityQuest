@@ -2,9 +2,9 @@ from flask import Flask, render_template, jsonify, Response, request, session, r
 
 import os
 
-from utils import genz,detected_objects
+from utils import detected_objects,generate_frames_web
 
-
+# genz
 app = Flask(__name__, template_folder='Templates', static_folder='assets')
 
 app.secret_key = 'your_secret_key'  # Replace with a secure secret key
@@ -60,13 +60,13 @@ def result():
         return render_template("index.html")
 
 
-@app.route('/video_feed')
-def video_feed():
+# @app.route('/video_feed')
+# def video_feed():
     
     
-        # Do something with the user's email, e.g., pass it to the template
-         return Response(genz(),
-                    mimetype='multipart/x-mixed-replace; boundary=frame')
+#         # Do something with the user's email, e.g., pass it to the template
+#          return Response(genz(),
+#                     mimetype='multipart/x-mixed-replace; boundary=frame')
    
     
 @app.route("/profile")
@@ -86,7 +86,17 @@ def logout():
 
     session.pop('user_email', None)
     return redirect('/')
+# ========================================================
+@app.route("/webcam", methods=['GET','POST'])
 
+def webcam():
+    session.clear()
+    return render_template('results.html')
+
+@app.route('/webapp')
+def webapp():
+    #return Response(generate_frames(path_x = session.get('video_path', None),conf_=round(float(session.get('conf_', None))/100,2)),mimetype='multipart/x-mixed-replace; boundary=frame')
+    return Response(generate_frames_web(path_x=0), mimetype='multipart/x-mixed-replace; boundary=frame')
 
 if __name__ == '__main__':
     app.run(debug=True)
