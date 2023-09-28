@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Profile</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Include your CSS file here -->
+    <link rel="stylesheet" href="styles.css"> 
     <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-auth-compat.js"></script>
@@ -21,5 +21,123 @@
     </div>
     {% endif %}
     <script type="module" src="../assets/js/profile.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="../assets/css/profile1.css">
+     <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-auth-compat.js"></script> 
+    <!-- FontAwesome 5 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+</head>
+<body>
+    <script>
+        var user_email = "{{ user_email }}";
+    </script>
+    {% if user_email %}
+    <!-- Navbar top -->
+    <div class="navbar-top">
+        <div class="title">
+            <h1>Profile</h1>
+        </div>
+
+        <!-- Navbar -->
+        <ul>
+            <li>
+                <a href="#message">
+                    <span class="icon-count">2</span>
+                    <i class="fa fa-envelope fa-2x"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#notification">
+                    <span class="icon-count">5</span>
+                    <i class="fa fa-bell fa-2x"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#sign-out">
+                    <i class="fa fa-sign-out-alt fa-2x"></i>
+                </a>
+            </li>
+        </ul>
+        <!-- End -->
+    </div>
+    <!-- End -->
+
+    <!-- Sidenav -->
+    <div class="sidenav">
+        <div class="profile">
+            <img src="../assets/img/profileim.png" width="300px">
+
+            <div class="name">
+                xyz
+                //use javascript to get name
+            </div>
+            <div class="job">
+                Environment Cleaner
+            </div>
+        </div>
+
+        <div class="sidenav-url">
+            <div class="url">
+                <a href="#profile" class="active">Profile</a>
+                <hr align="center">
+            </div>
+            <div class="url">
+                <a href="#settings">Settings</a>
+                <hr align="center">
+            </div>
+        </div>
+    </div>
+    <!-- End -->
+
+    <!-- Main -->
+    <div class="main">
+        <h2>IDENTITY</h2>
+        <div class="card">
+            <div class="card-body">
+                <div class="user-details">
+                <i class="fa fa-pen fa-xs edit"></i>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Name</td>
+                            <td>:</td>
+                            <td><p><span id="name"></span></p></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td>:</td>
+                            <td><p><span id="userEmail"></span></p></td>
+                        </tr>
+                        <tr>
+                            <td>Points</td>
+                            <td>:</td>
+                            <td><p><span id="points"></span></p></td>
+                        </tr>
+                        <tr>
+                            <td>Rank</td>
+                            <td>:</td>
+                            <td><p><span id="rank"></span></p></td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    <script type="module" src="../assets/js/profile.js"></script>
+    <!-- End -->
 </body>
 </html>

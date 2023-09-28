@@ -4,6 +4,8 @@ pip install opencv-python
 pip install flask
 pip install os
 pip install json
+pip install ultralytics
+
 
 HOW To Run
 python -m venv myenv

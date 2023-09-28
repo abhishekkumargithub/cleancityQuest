@@ -14,40 +14,37 @@ const auth = firebaseApp.auth();
 
 
 const lastDetectedObjects = {};
-const cooldownTime = 5000; // 5 seconds cooldown for each object
+const cooldownTime = 5000;
 
 async function fetchDetectedObjects() {
   const response = await fetch('/get_detected_objects');
   const data = await response.json();
   const detectedObjects = data.detected_objects;
   console.log('Detected Objects:', detectedObjects);
-
-  // Clear the existing buttons
   const buttonsDiv = document.getElementById('buttons');
-
-  detectedObjects.forEach((object) => {
+  detectedObjects.forEach(async (object) => {
     const currentTime = Date.now();
-
     if (!lastDetectedObjects[object] || currentTime - lastDetectedObjects[object] >= cooldownTime) {
       const button = document.createElement('button');
       button.textContent = `Do Challenge ${object}`;
       button.addEventListener('click', async () => {
-        const pointSystemRef = db.collection('PointSystem');  
-        const doc = await pointSystemRef.doc(user_email).get();
-        // if (!doc.exists) {
-        //   await pointSystemRef.doc(user_email).set({
-        //     useremail: user_email,
-        //     points: 50 
-        //   });
-        // } else {
-        //   // If the document exists, update the user's points by +50
-          await pointSystemRef.doc(user_email).update({
-            points: firebase.firestore.FieldValue.increment(50)
+        const pointSystemRef = db.collection('PointSystem');
+        const query = pointSystemRef.where('user_email', '==', user_email);
+
+        try {
+          const querySnapshot = await query.get();
+          querySnapshot.forEach(async (doc) => {
+            await doc.ref.update({
+              points: firebase.firestore.FieldValue.increment(50)
+            });
           });
+          console.log("Done updating points for matching user_email");
+        } catch (error) {
+          console.error("Error updating points:", error);
+        }
       })
       buttonsDiv.appendChild(button);
       lastDetectedObjects[object] = currentTime;
-      // Set a timeout to remove the button after 5 seconds
       setTimeout(() => {
         buttonsDiv.removeChild(button);
         delete lastDetectedObjects[object];
@@ -56,8 +53,5 @@ async function fetchDetectedObjects() {
   });
 }
 
-// Call fetchDetectedObjects initially
 fetchDetectedObjects();
-
-// Use setInterval to call fetchDetectedObjects every 2 seconds
 setInterval(fetchDetectedObjects, 2000);
