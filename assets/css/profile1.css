@@ -8,15 +8,15 @@
 }
 
 body {
-    background-color: #05a650;
+    background-color:#000;
     font-family: Arial;
     overflow: hidden;
 }
 
 /* NavbarTop */
 .navbar-top {
-    background-color: #fff;
-    color: #333;
+    background-color: #000000;
+    color: #fff;
     box-shadow: 0px 4px 8px 0px grey;
     height: 70px;
 }
@@ -25,7 +25,8 @@ body {
     font-family: 'Dancing Script', cursive;
     padding-top: 15px;
     position: absolute;
-    left: 45%;
+    left: 55%;
+    color: #64be67;
 }
 
 .navbar-top ul {
@@ -41,14 +42,14 @@ body {
 }
 
 .navbar-top ul li a {
-    color: #333;
+    color: #fff;
     padding: 14px 16px;
     text-align: center;
     text-decoration: none;
 }
 
 .icon-count {
-    background-color: #0c6dc2;
+    background-color: #6a64be;
     color: #fff;
     float: right;
     font-size: 11px;
@@ -57,20 +58,22 @@ body {
     position: relative;
 }
 
-/* End */
+/* End #0f1e1c*/
 
 /* Sidenav */
 .sidenav {
-    background-color: #fff;
-    color: #333;
-    border-bottom-right-radius: 35px;
-    height: 88%;
+    background-color: #102e28;
+    color: #fff;
+    border-bottom-right-radius: 95px;
+    border-top-right-radius: 35px;
+    height: 97%;
     left: 0;
     overflow-x: hidden;
-    padding-top: 20px;
+    padding-top: 90px;
     position: absolute;
-    top: 70px;
-    width: 350px;
+    top: 0px;
+    bottom: 3px;
+    width: 345px;
 }
 
 .profile {
@@ -80,20 +83,22 @@ body {
 }
 
 .profile img {
-    border-radius: 50%;
-    box-shadow: 0px 0px 5px 1px rgb(11, 68, 121);
+    border-radius: 30%;
+    box-shadow: 0px 0px 5px 1px rgb(5, 88, 34);
 }
 
 .name {
     font-size: 20px;
     font-weight: bold;
     padding-top: 20px;
+    color: #fff;
 }
 
 .job {
     font-size: 16px;
     font-weight: bold;
     padding-top: 10px;
+    color: #64be67;
 }
 
 .url, hr {
@@ -115,7 +120,7 @@ body {
 }
 
 .url a:hover, .url .active {
-    background-color:#12bd62;
+    background-color: #64be67;
     border-radius: 28px;
     color: #000;
     margin-left: 14%;
@@ -126,34 +131,39 @@ body {
 
 /* Main */
 .main {
-    margin-top: 2%;
+    margin-top: 7%;
     margin-left: 29%;
     font-size: 28px;
     padding: 0 10px;
     width: 58%;
+    color: #fff;
 }
 
 .main h2 {
-    color: #333;
+    color: #fff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 24px;
     margin-bottom: 10px;
 }
 
 .main .card {
-    background-color: #fff;
+    background-color: #102e28;
     border-radius: 18px;
     box-shadow: 1px 1px 8px 0 grey;
-    height: auto;
-    margin-bottom: 20px;
+    height: 300px;
+    margin-bottom: 10px;
+    margin-top: 40px;
     padding: 20px 0 20px 50px;
+    
 }
 
 .main .card table {
     border: none;
     font-size: 16px;
-    height: 270px;
+    height: 300px;
     width: 90%;
+    color: #fff;
+    position: relative;
 }
 
 .edit {
@@ -161,42 +171,4 @@ body {
     color: #086822;
     right: 14%;
 }
-
-.social-media {
-    text-align: center;
-    width: 90%;
-}
-
-.social-media span {
-    margin: 0 10px;
-}
-
-.fa-facebook:hover {
-    color: #4267b3 !important;
-}
-
-.fa-twitter:hover {
-    color: #1da1f2 !important;
-}
-
-.fa-instagram:hover {
-    color: #ce2b94 !important;
-}
-
-.fa-invision:hover {
-    color: #f83263 !important;
-}
-
-.fa-github:hover {
-    color: #161414 !important;
-}
-
-.fa-whatsapp:hover {
-    color: #25d366 !important;
-}
-
-.fa-snapchat:hover {
-    color: #fffb01 !important;
-}
-
 /* End */
