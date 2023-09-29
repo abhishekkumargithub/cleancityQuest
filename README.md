@@ -20,7 +20,7 @@ Our website consists of these features:
 <h3> Operating on localHost:</h3>
 For running it on your local server you need to perform the requirement.txt file operations:(install those libraries in your system and you are good to goo...)
 ==========================================================================================
-![image](https://github.com/abhishekkumargithub/cleancityQuest/assets/91794397/7d079c7c-e6b5-420a-a4e7-a0b191aaeedd)
+
 
 
 
@@ -30,6 +30,6 @@ For running it on your local server you need to perform the requirement.txt file
 <H3>Website link:</H3>
 
 
-
+![image](https://github.com/abhishekkumargithub/cleancityQuest/assets/91794397/7d079c7c-e6b5-420a-a4e7-a0b191aaeedd)
 
 
