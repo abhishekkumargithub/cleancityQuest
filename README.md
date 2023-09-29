@@ -20,13 +20,14 @@ Our website consists of these features:
 For running it on your local server you need to perform the requirement.txt file operations:
 
 <H3>OUTPUT</H3>
-![image](https://github.com/abhishekkumargithub/cleancityQuest/assets/91794397/ecdfd702-e619-4a59-aedf-17ae1e24a89a)
+![landingpage](https://github.com/abhishekkumargithub/cleancityQuest/assets/91794397/7cdcfd11-7b57-454b-8a69-e6fc66cd6ae3)
+
 
 
 🔥🧹 Unleash your inner goblin cleaner and dominate your city! 🌆🧼 Don't wait any longer, dive into the thrilling world of goblin cleaning and start playing now! 🎮💪 
 
+<H3>Website link:</H3>
 
-Here is its  website link:
 
 
 
