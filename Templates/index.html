@@ -13,7 +13,6 @@
     <!--========== CSS ==========-->
     <link rel="stylesheet" href="../assets/css/styles.css" />
 
-
     <title>CleanCityQuest</title>
 
     <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-app-compat.js"></script>
@@ -23,7 +22,6 @@
   <body>
     <script>
       var user_email = "{{ user_email }}";
-
     </script>
     <!--========== SCROLL TOP ==========-->
     <a href="#" class="scrolltop" id="scroll-top">
@@ -34,9 +32,11 @@
     <header class="l-header" id="header">
       <nav class="nav bd-container">
         <a href="#" class="nav__logo">CleanCityQuest</a>
-        {% if user_email %}
-            <p>Welcome, <a href="/profile" id="name"></a>!</p>
-        {% endif %}
+        <div id="navbarlogout">
+          {% if user_email %}
+          <p>Welcome, <a href="/profile" id="name"></a>!</p>
+          {% endif %}
+        </div>
 
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
@@ -56,8 +56,8 @@
               <a href="#contact" class="nav__link">Contact us</a>
             </li>
             {% if user_email %}
-            <li class="nav__item">
-              <a href="/logout" id="logout" >Logout</a>
+            <li class="nav__item" id="navbarlogout">
+              <a href="/logout" id="logout">Logout</a>
             </li>
             {% endif %}
 
@@ -76,7 +76,6 @@
       <section class="home" id="home">
         <div class="home__container bd-container bd-grid">
           <div class="home__data">
-
             <h1 class="home__title">CleanCityQuest</h1>
 
             <h2 class="home__subtitle">
@@ -100,7 +99,8 @@
               healthy and clean environment
             </h2>
             <p class="about__description">
-              Dive into the thrilling world of goblin cleaning and start playing now!!! 
+              Dive into the thrilling world of goblin cleaning and start playing
+              now!!!
             </p>
             {% if user_email %}
             <a href="/results" class="button">Play Now</a>
@@ -271,7 +271,9 @@
             </p>
           </div>
           <div class="contact__button">
-            <a href="mailto:cleancityquest@example.com" class="button">Contact us now</a>
+            <a href="mailto:cleancityquest@example.com" class="button"
+              >Contact us now</a
+            >
           </div>
         </div>
       </section>
@@ -281,7 +283,6 @@
     <footer class="footer section bd-container">
       <div class="footer__container bd-grid">
         <div class="footer__content">
-
           <a href="#" class="footer__logo">CleanCityQuest</a>
 
           <span class="footer__description">Game</span>

@@ -562,26 +562,53 @@ img{
     }
 }
 
-
-a:link {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
+#navbarlogout{
+  >a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  >a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  >a:hover {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  >a:active {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
 }
 
-a:visited {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
-}
-a:hover {
-  color: green;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:active {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
+#name{
+  >a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  >a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  >a:hover {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  >a:active {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
 }
