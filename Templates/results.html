@@ -5,14 +5,13 @@
     <title>Object Detection</title>
     <style>
         body {
-            
             background-color: #0a0b09;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            font-family:  cursive; 
+            font-family: cursive;
         }
         
         .container {
@@ -24,9 +23,6 @@
             flex-direction: column;
             align-items: center;
             padding: 15px;
-            /* margin-top: 10px;
-            margin-left: 20px;
-            margin-right: 5px; */
         }
         
         h1 {
@@ -37,15 +33,29 @@
         
         img {
             border-radius: 20px;
+            max-width: 100%;
+            height: auto;
         }
         
         p {
-            color: rgb(199, 39, 39);
-            font-size: 30px;
+            color: #c72727;
+            font-size: 25px;
             font-weight: bold;
-            margin-bottom: 650px;
             margin-top: 10px;
             text-align: left;
+            margin-bottom: 650px;
+        }
+
+        @media (max-width: 768px) {
+            /* Adjustments for small screens */
+            h1 {
+                font-size: 30px;
+            }
+            
+            img {
+                width: 100%;
+                height: auto;
+            }
         }
     </style>
     <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-app-compat.js"></script>
@@ -62,7 +72,7 @@
     <div class="container">
         <h1>Object Detection Live Feed</h1>
 
-        <img src="{{ url_for('webapp') }}" width="900" height="480">
+        <img src="{{ url_for('webapp') }}" alt="Object Detection Feed">
 
         <div id="buttons"></div>
     </div>
