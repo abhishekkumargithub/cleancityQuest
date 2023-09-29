@@ -67,8 +67,9 @@ const signUp = async() => {
       // ..
     });
 
-    window.location = "/login";
-
+    setTimeout(function() {
+      window.location.href = '/';
+  }, 2000);
    
 };
 //=============
@@ -104,10 +105,12 @@ const signIn = () => {
           console.error("Error:", error);
         });
 
-      window.location= "/";
     })
     .catch((error) => {
       console.log(error.code);
       console.log(error.message);
     });
+    setTimeout(function() {
+      window.location.href = '/';
+  }, 2000);
 };
