@@ -15,12 +15,11 @@ Our website consists of these features:
   
   <h4> - Firebase and ML-based Leaderboard:</h4> We are using Firebase, a cloud-based platform, as the backend for our project. The leaderboard feature uses machine learning algorithms to promote EcoTech and cleanliness in the environment. Users can compete with each other to earn points by correctly identifying and disposing of garbage in their surroundings. The leaderboard displays the top users in real-time and encourages healthy competition among users.<br>
 
--------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
 <h3> Operating on localHost:</h3>
 For running it on your local server you need to perform the requirement.txt file operations:<br>
 (install those libraries in your system and you are good to goo...)
-<br>
--------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------
 <br> 🔥🧹 Unleash your inner goblin cleaner and dominate your city! 🌆<br>
 🧼 Don't wait any longer, dive into the thrilling world of goblin cleaning and start playing now! 🎮💪 
 
