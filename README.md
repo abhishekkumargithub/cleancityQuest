@@ -4,14 +4,14 @@
 
 <h3>Description:</h3>
 Are you tired of boring cleanup tasks? Want to make a difference in your community while having fun? Look no further than "CleanCity Quest"! Our app gamifies cleaning tasks, detects waste items, and rewards you with points for cleaning them up. Join us in our mission to revolutionize the way we tackle litter and waste in our communities - let's make cleaning up a thrilling adventure!
-
-<h4>1. Authentication and User Profile:</h4> Our project includes a user authentication system that allows users to log in and log out of the platform securely. The user profile section allows users to manage their personal information, such as name, email, and password.
-
-<h4>2. Landing Page and Garbage Detection:</h4> Our platform features a landing page that provides an intuitive user interface for users to navigate through the platform. We are using YOLOv8, a state-of-the-art object detection algorithm, to detect garbage in real-time. This feature helps users to identify and locate garbage in their surroundings.
-
-<h4>3. Flask, Numpy, HTML, CSS, and JavaScript:</h4> We are using Flask, a Python web framework, to build the backend of our platform. Numpy is used for numerical computations, while HTML, CSS, and JavaScript are used for the frontend development. This combination of technologies enables us to build a responsive and user-friendly platform.
-
-<h4>4. Firebase and ML-based Leaderboard:</h4> We are using Firebase, a cloud-based platform, as the backend for our project. The leaderboard feature uses machine learning algorithms to promote EcoTech and cleanliness in the environment. Users can compete with each other to earn points by correctly identifying and disposing of garbage in their surroundings. The leaderboard displays the top users in real-time and encourages healthy competition among users.
+Our website consists of these features:
+  <h4>1. Authentication and User Profile:</h4> Our project includes a user authentication system that allows users to log in and log out of the platform securely. The user profile section allows users to manage their personal information, such as name, email, and password.
+  
+  <h4>2. Landing Page and Garbage Detection:</h4> Our platform features a landing page that provides an intuitive user interface for users to navigate through the platform. We are using YOLOv8, a state-of-the-art object detection algorithm, to detect garbage in real-time. This feature helps users to identify and locate garbage in their surroundings.
+  
+  <h4>3. Flask, Numpy, HTML, CSS, and JavaScript:</h4> We are using Flask, a Python web framework, to build the backend of our platform. Numpy is used for numerical computations, while HTML, CSS, and JavaScript are used for the frontend development. This combination of technologies enables us to build a responsive and user-friendly platform.
+  
+  <h4>4. Firebase and ML-based Leaderboard:</h4> We are using Firebase, a cloud-based platform, as the backend for our project. The leaderboard feature uses machine learning algorithms to promote EcoTech and cleanliness in the environment. Users can compete with each other to earn points by correctly identifying and disposing of garbage in their surroundings. The leaderboard displays the top users in real-time and encourages healthy competition among users.
 
 
 For running it on your local server you need to perform the requirement.txt file operations:
