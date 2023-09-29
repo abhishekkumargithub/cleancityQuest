@@ -5,7 +5,7 @@
 <H3>CleanCityQuest - Where Cleanup Meets Adventure!!</H3>
 ====================================================================
 <h3>Description:</h3>
-----------------------------------------------------------------------------------------------------------------
+
 Are you tired of boring cleanup tasks? Want to make a difference in your community while having fun? Look no further than "CleanCity Quest"! Our app gamifies cleaning tasks, detects waste items, and rewards you with points for cleaning them up. Join us in our mission to revolutionize the way we tackle litter and waste in our communities - let's make cleaning up a thrilling adventure!
 Our website consists of these features:
   <h4>  - Authentication and User Profile:</h4> Our project includes a user authentication system that allows users to log in and log out of the platform securely. The user profile section allows users to manage their personal information, such as name, email, and password.
