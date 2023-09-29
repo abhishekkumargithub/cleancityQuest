@@ -141,12 +141,14 @@ const auth = firebaseApp.auth();
 const fetchUserData = async () => {
   const profileRef = db.collection("UserDetails");
   try {
+    console.log(user_email);
     const querySnapshot = await profileRef
       .where("user_email", "==", user_email)
       .get();
     if (!querySnapshot.empty) {
       querySnapshot.forEach((doc) => {
         const documentData = doc.data();
+        console.log(documentData)
         const userEmailElement = document.getElementById("name");
         userEmailElement.textContent =
           documentData.FirstName + " " + documentData.LastName;
@@ -182,7 +184,6 @@ const fetchTop3Users = async () => {
       if (!userQuerySnapshot.empty) {
         userQuerySnapshot.forEach((userDoc) => {
           const userData = userDoc.data();
-          console.log(userData.FirstName + " " + userData.LastName);
           top3Users.push({
             userName: userData.FirstName + " " + userData.LastName,
             points: documentData.points,
@@ -209,3 +210,4 @@ const fetchTop3Users = async () => {
 };
 
 window.addEventListener("load", fetchTop3Users);
+
