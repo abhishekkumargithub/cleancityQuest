@@ -20,7 +20,8 @@ Our website consists of these features:
 For running it on your local server you need to perform the requirement.txt file operations:
 
 <H3>OUTPUT</H3>
-![landingpage](https://github.com/abhishekkumargithub/cleancityQuest/assets/91794397/7cdcfd11-7b57-454b-8a69-e6fc66cd6ae3)
+![image](https://github.com/abhishekkumargithub/cleancityQuest/assets/91794397/7d079c7c-e6b5-420a-a4e7-a0b191aaeedd)
+
 
 
 
