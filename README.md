@@ -1,5 +1,5 @@
 <h1>Project Title: CleanCityQuest </h1>
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------
 <h3>Project theme: EcoTech</h3>
 
 <H3>CleanCityQuest - Where Cleanup Meets Adventure!!</H3>
@@ -16,15 +16,15 @@ Our website consists of these features:
   
   <h4> - Firebase and ML-based Leaderboard:</h4> We are using Firebase, a cloud-based platform, as the backend for our project. The leaderboard feature uses machine learning algorithms to promote EcoTech and cleanliness in the environment. Users can compete with each other to earn points by correctly identifying and disposing of garbage in their surroundings. The leaderboard displays the top users in real-time and encourages healthy competition among users.
 
-==============================================================================================================================================================================
+=========================================================================================
 <h3> Operating on localHost:</h3>
 For running it on your local server you need to perform the requirement.txt file operations:(install those libraries in your system and you are good to goo...)
-==============================================================================================================================================================================
+==========================================================================================
 ![image](https://github.com/abhishekkumargithub/cleancityQuest/assets/91794397/7d079c7c-e6b5-420a-a4e7-a0b191aaeedd)
 
 
 
-==============================================================================================================================================================================
+==========================================================================================
 🔥🧹 Unleash your inner goblin cleaner and dominate your city! 🌆🧼 Don't wait any longer, dive into the thrilling world of goblin cleaning and start playing now! 🎮💪 
 
 <H3>Website link:</H3>
