@@ -17,14 +17,14 @@ def generate_frames_web(path_x):
                b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
 
 
-def video_detection(path_x, confidence_threshold=0.7, num_classes=8):
+def video_detection(path_x, confidence_threshold=0.5, num_classes=8):
     video_capture = path_x
     cap = cv2.VideoCapture(video_capture)
     frame_width = int(cap.get(3))
     frame_height = int(cap.get(4))
 
-    model = YOLO("./OpenCVML/best.pt")
-    classNames = ["Garbage"]
+    model = YOLO("./OpenCVML/5type.pt")
+    classNames = ["Biodegradable","Cardboard","Glass","Metal","Paper","Plastic"]
 
     while True:
         success, img = cap.read()
