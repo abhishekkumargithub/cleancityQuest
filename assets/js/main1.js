@@ -12,13 +12,15 @@ const firebaseApp = firebase.initializeApp({
 const db = firebaseApp.firestore();
 const auth = firebaseApp.auth();
 
-// Sign up function
+// SIGN UP PAGE================================================================
 const signUp = async() => {
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
   const FirstName = document.getElementById("firstname").value;
   const LastName = document.getElementById("lastname").value;
   const phoneNumber = document.getElementById("phoneno").value;
+  
+
   // firebase code
   await firebase
     .auth()
@@ -37,7 +39,9 @@ const signUp = async() => {
         .catch((error) => {
           console.error("Error adding document: ", error);
         });
-
+        //==========
+       
+        //=========
         const data2 = {
           FirstName : FirstName, 
           LastName : LastName, 
@@ -67,8 +71,12 @@ const signUp = async() => {
 
    
 };
+//=============
 
-// Sign In function
+
+
+
+// LOGIN PAGE================================================================
 const signIn = () => {
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;

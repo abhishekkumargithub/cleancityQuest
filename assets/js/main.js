@@ -209,3 +209,4 @@ const fetchTop3Users = async () => {
 };
 
 window.addEventListener("load", fetchTop3Users);
+
