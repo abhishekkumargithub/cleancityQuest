@@ -1,5 +1,5 @@
 <h1>Project Title: CleanCityQuest </h1>
-----------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
 <h3>Project theme: EcoTech</h3>
 
 <H3>CleanCityQuest - Where Cleanup Meets Adventure!!</H3>
@@ -29,7 +29,6 @@ For running it on your local server you need to perform the requirement.txt file
 <H3>Website link:</H3>
 
 ----------------------------------------------------------------------------------
-<H3>Output</H3>
 ![image](https://github.com/abhishekkumargithub/cleancityQuest/assets/91794397/7d079c7c-e6b5-420a-a4e7-a0b191aaeedd)
 
 
