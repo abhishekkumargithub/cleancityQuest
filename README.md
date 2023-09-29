@@ -1,12 +1,11 @@
 <h1>Project Title: CleanCityQuest </h1>
 -----------------------------------------------------------------------------------------------------------------
 <h3>Project theme: EcoTech</h3>
-
-<H3>CleanCityQuest - Where Cleanup Meets Adventure!!</H3>
+-----------------------------------------------------------------------------------------------------------------
+<H3>Objective:</H3> 
+Our objective is to develop a fully responsive website with integrated frontend, backend, and machine learning capabilities for the "CleanCity Quest" app. This website will serve as a platform to gamify cleaning tasks, detect waste items, and reward users with points for their clean-up efforts. By building this website, we aim to revolutionize the way communities tackle litter and waste, turning the process of cleaning up into an exciting adventure.
 ====================================================================
 <h3>Description:</h3>
-
-Are you tired of boring cleanup tasks? Want to make a difference in your community while having fun? Look no further than "CleanCity Quest"! Our app gamifies cleaning tasks, detects waste items, and rewards you with points for cleaning them up. Join us in our mission to revolutionize the way we tackle litter and waste in our communities - let's make cleaning up a thrilling adventure!
 Our website consists of these features:
   <h4>  - Authentication and User Profile:</h4> Our project includes a user authentication system that allows users to log in and log out of the platform securely. The user profile section allows users to manage their personal information, such as name, email, and password.
   
