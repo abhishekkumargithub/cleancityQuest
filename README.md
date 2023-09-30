@@ -44,4 +44,5 @@ then for running the app run the follwoing command in your terminal:<br>
 
 ![WhatsApp Image 2023-09-30 at 12 15 38 AM](https://github.com/abhishekkumargithub/cleancityQuest/assets/91377728/21a17d3e-5a56-414d-a745-22931ba7bba1)
 
+![image](https://github.com/abhishekkumargithub/cleancityQuest/assets/91794397/023588dc-a098-4b48-9fa5-af954bf489c6)
 
