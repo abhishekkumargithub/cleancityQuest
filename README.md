@@ -15,12 +15,6 @@ Our platform features an intuitive landing page for user navigation. We employ Y
 
 Our project relies on a substantial dataset obtained from Roboflow, including 11,166 training images, 525 test images, and 1,069 validation images, encompassing a wide variety of waste materials. This dataset forms the foundation of our research.
 
-To build a robust waste detection system, we customized and trained YOLOv8 to recognize specific waste categories: plastic, cardboard, metal, paper, and biodegradable materials. This meticulous process ensures precise waste identification.
-
-The essence of our project lies in its practical application. Our model offers real-time object detection, enabling the identification of various waste types in the environment. This empowers us to advance waste management and environmental stewardship by swiftly categorizing waste for proper disposal or recycling.
-
-  
-  
   <h4> -  Flask, Numpy, HTML, CSS, and JavaScript:</h4> We are using Flask, a Python web framework, to build the backend of our platform. Numpy is used for numerical computations, while HTML, CSS, and JavaScript are used for the frontend development. This combination of technologies enables us to build a responsive and user-friendly platform.
   
   <h4> - Firebase and ML-based Leaderboard:</h4> We are using Firebase, a cloud-based platform, as the backend for our project. The leaderboard feature uses machine learning algorithms to promote EcoTech and cleanliness in the environment. Users can compete with each other to earn points by correctly identifying and disposing of garbage in their surroundings. The leaderboard displays the top users in real-time and encourages healthy competition among users.<br>
