@@ -19,6 +19,9 @@ Our website consists of these features:
 <h3> Operating on localHost:</h3>
 For running it on your local server you need to perform the requirement.txt file operations:<br>
 (install those libraries in your system and you are good to goo...)<br>
+then for running the app run the follwoing command in your terminal:<br>
+   1. python -m venv myenv <br>
+   2. flask run <br>
 --------------------------------------------------------------------------------------------------------------------------
 <br> 🔥🧹 Unleash your inner goblin cleaner and dominate your city! 🌆<br>
 🧼 Don't wait any longer, dive into the thrilling world of goblin cleaning and start playing now! 🎮💪 
