@@ -43,13 +43,13 @@ then for running the app run the follwoing command in your terminal:<br>
 ---------------------------------------------------------------------------------------------------------------------------
 
 <H3>links:</H3>
-<ul>
-  <li>garbage classification: https://drive.google.com/file/d/17mPKwpqSVKeEtq6rhwZtV0thjsOO49c6/view?usp=drive_link</li>
-  <li>data: https://drive.google.com/file/d/1HlaM3ycY8E3ovXPASXVCCFM-4NrZArbZ/view?usp=drive_link</li>
-  <li>type5 yolo model:https://drive.google.com/file/d/1gz8NPaUULpZ0nmrg8D--NQoFVdCuv3RN/view?usp=drive_link </li>
-</ul>
-----------------------------------------------------------------------------------
-<br>
+<ul><br>
+  <li>garbage classification: https://drive.google.com/file/d/17mPKwpqSVKeEtq6rhwZtV0thjsOO49c6/view?usp=drive_link</li><br>
+  <li>data: https://drive.google.com/file/d/1HlaM3ycY8E3ovXPASXVCCFM-4NrZArbZ/view?usp=drive_link</li><br>
+  <li>type5 yolo model:https://drive.google.com/file/d/1gz8NPaUULpZ0nmrg8D--NQoFVdCuv3RN/view?usp=drive_link </li><br>
+</ul><br>
+---------------------------------------------------------------------------------
+
 ![image](https://github.com/abhishekkumargithub/cleancityQuest/assets/91794397/7d079c7c-e6b5-420a-a4e7-a0b191aaeedd)
 
 ![WhatsApp Image 2023-09-30 at 12 15 38 AM](https://github.com/abhishekkumargithub/cleancityQuest/assets/91377728/21a17d3e-5a56-414d-a745-22931ba7bba1)
