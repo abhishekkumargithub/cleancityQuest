@@ -13,8 +13,6 @@ Our website consists of these features:
 
 Our platform features an intuitive landing page for user navigation. We employ YOLOv8, an advanced real-time object detection algorithm, to identify and locate garbage in the user's surroundings.
 
-Our project relies on a substantial dataset obtained from Roboflow, including 11,166 training images, 525 test images, and 1,069 validation images, encompassing a wide variety of waste materials. This dataset forms the foundation of our research.
-
   <h4> -  Flask, Numpy, HTML, CSS, and JavaScript:</h4> We are using Flask, a Python web framework, to build the backend of our platform. Numpy is used for numerical computations, while HTML, CSS, and JavaScript are used for the frontend development. This combination of technologies enables us to build a responsive and user-friendly platform.
   
   <h4> - Firebase and ML-based Leaderboard:</h4> We are using Firebase, a cloud-based platform, as the backend for our project. The leaderboard feature uses machine learning algorithms to promote EcoTech and cleanliness in the environment. Users can compete with each other to earn points by correctly identifying and disposing of garbage in their surroundings. The leaderboard displays the top users in real-time and encourages healthy competition among users.<br>
