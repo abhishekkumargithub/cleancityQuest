@@ -26,17 +26,14 @@ The essence of our project lies in its practical application. Our model offers r
   <h4> - Firebase and ML-based Leaderboard:</h4> We are using Firebase, a cloud-based platform, as the backend for our project. The leaderboard feature uses machine learning algorithms to promote EcoTech and cleanliness in the environment. Users can compete with each other to earn points by correctly identifying and disposing of garbage in their surroundings. The leaderboard displays the top users in real-time and encourages healthy competition among users.<br>
 
 ------------------------------------------------------------------------------------------------
-<h3> Operating on localHost:</h3>
+<h3> Operating on localHost 5000:</h3>
 For running it on your local server you need to perform the requirement.txt file operations:<br>
 (install those libraries in your system and you are good to goo...)<br>
 then for running the app run the follwoing command in your terminal:<br>
    1. python -m venv myenv <br>
    2. flask run <br>
 --------------------------------------------------------------------------------------------------------------------------
-<br> 🔥🧹 Unleash your inner goblin cleaner and dominate your city! 🌆<br>
-🧼 Don't wait any longer, dive into the thrilling world of goblin cleaning and start playing now! 🎮💪 
-<br>
----------------------------------------------------------------------------------------------------------------------------
+
 <H3>Outcomes:</H3>
 <ul>
   <li>The foundation of our project rests on a substantial dataset sourced from Roboflow(Garbage Types), featuring a diverse compilation of train: 11,166 images,Test:525 images,Valid:1069. These images represent a wide spectrum of waste materials, forming a comprehensive and rich dataset for our research.
@@ -46,6 +43,12 @@ then for running the app run the follwoing command in your terminal:<br>
   <li> The true essence of our project comes to life when we delve into its practical application. Our model enables real-time object detection, showcasing its versatility in identifying various types of waste as they appear in the environment. This capability empowers us to take a significant step forward in waste management and environmental stewardship, as we can swiftly and accurately categorize waste materials, facilitating their proper disposal or recycling.</li>
 </ul><br>
 
+---------------------------------------------------------------------------------------------------------------------------
+
+<br> 🔥🧹 Unleash your inner goblin cleaner and dominate your city! 🌆<br>
+🧼 Don't wait any longer, dive into the thrilling world of goblin cleaning and start playing now! 🎮💪 
+<br>
+---------------------------------------------------------------------------------------------------------------------------
 
 <H3>Website link:</H3>
 
