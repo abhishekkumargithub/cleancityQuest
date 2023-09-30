@@ -35,6 +35,16 @@ then for running the app run the follwoing command in your terminal:<br>
 --------------------------------------------------------------------------------------------------------------------------
 <br> 🔥🧹 Unleash your inner goblin cleaner and dominate your city! 🌆<br>
 🧼 Don't wait any longer, dive into the thrilling world of goblin cleaning and start playing now! 🎮💪 
+<br>
+---------------------------------------------------------------------------------------------------------------------------
+<H3>Outcomes:</H3>
+<ul>
+  <li>The foundation of our project rests on a substantial dataset sourced from Roboflow(Garbage Types), featuring a diverse compilation of train: 11,166 images,Test:525 images,Valid:1069. These images represent a wide spectrum of waste materials, forming a comprehensive and rich dataset for our research.
+</li><br>
+  <li> In our quest to develop a robust waste detection system, we harnessed the power of YOLOv8, an advanced object detection framework. Through painstaking customization, we meticulously trained this model to recognize distinct waste categories, including plastic, cardboard, metal, paper, and biodegradable materials. This involved the meticulous process of teaching the model to differentiate and accurately classify these materials, ensuring a high level of precision in waste identification.
+</li><br>
+  <li> The true essence of our project comes to life when we delve into its practical application. Our model enables real-time object detection, showcasing its versatility in identifying various types of waste as they appear in the environment. This capability empowers us to take a significant step forward in waste management and environmental stewardship, as we can swiftly and accurately categorize waste materials, facilitating their proper disposal or recycling.</li>
+</ul><br>
 
 
 <H3>Website link:</H3>
@@ -45,4 +55,14 @@ then for running the app run the follwoing command in your terminal:<br>
 ![WhatsApp Image 2023-09-30 at 12 15 38 AM](https://github.com/abhishekkumargithub/cleancityQuest/assets/91377728/21a17d3e-5a56-414d-a745-22931ba7bba1)
 
 ![image](https://github.com/abhishekkumargithub/cleancityQuest/assets/91794397/023588dc-a098-4b48-9fa5-af954bf489c6)
+
+![WhatsApp Image 2023-09-30 at 17 40 05](https://github.com/abhishekkumargithub/cleancityQuest/assets/91794397/44fe2057-d19f-479e-bb0f-14bffa409653)
+
+![WhatsApp Image 2023-09-30 at 17 40 05 1](https://github.com/abhishekkumargithub/cleancityQuest/assets/91794397/26a8f665-5cef-4fa0-ab05-db5fcb0578ef)
+
+![WhatsApp Image 2023-09-30 at 17 40 06 2](https://github.com/abhishekkumargithub/cleancityQuest/assets/91794397/93832160-27ca-4358-b9e5-06ef873ad15d)
+
+
+
+
 
