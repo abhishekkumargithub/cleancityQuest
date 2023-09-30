@@ -9,7 +9,17 @@ Our objective is to develop a fully responsive website with integrated frontend,
 Our website consists of these features:
   <h4>  - Authentication and User Profile:</h4> Our project includes a user authentication system that allows users to log in and log out of the platform securely. The user profile section allows users to manage their personal information, such as name, email, and password.
   
-  <h4>  -  Landing Page and Garbage Detection:</h4> Our platform features a landing page that provides an intuitive user interface for users to navigate through the platform. We are using YOLOv8, a state-of-the-art object detection algorithm, to detect garbage in real-time. This feature helps users to identify and locate garbage in their surroundings.
+  <h4>  -  Landing Page and Garbage Detection:</h4>
+
+Our platform features an intuitive landing page for user navigation. We employ YOLOv8, an advanced real-time object detection algorithm, to identify and locate garbage in the user's surroundings.
+
+Our project relies on a substantial dataset obtained from Roboflow, including 11,166 training images, 525 test images, and 1,069 validation images, encompassing a wide variety of waste materials. This dataset forms the foundation of our research.
+
+To build a robust waste detection system, we customized and trained YOLOv8 to recognize specific waste categories: plastic, cardboard, metal, paper, and biodegradable materials. This meticulous process ensures precise waste identification.
+
+The essence of our project lies in its practical application. Our model offers real-time object detection, enabling the identification of various waste types in the environment. This empowers us to advance waste management and environmental stewardship by swiftly categorizing waste for proper disposal or recycling.
+
+  
   
   <h4> -  Flask, Numpy, HTML, CSS, and JavaScript:</h4> We are using Flask, a Python web framework, to build the backend of our platform. Numpy is used for numerical computations, while HTML, CSS, and JavaScript are used for the frontend development. This combination of technologies enables us to build a responsive and user-friendly platform.
   
